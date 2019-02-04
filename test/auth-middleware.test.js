@@ -59,7 +59,7 @@ describe("authMiddleware", () => {
                 body: JSON.stringify({ token: "MYTOKENHERE" })    
             });
 
-            callback(null, { status: 400 }, {});
+            callback(null, { statusCode: 400 }, {});
         });
 
         auth(req, res);
@@ -87,7 +87,7 @@ describe("authMiddleware", () => {
                 body: JSON.stringify({ token: "MYTOKENHERE" })    
             });
 
-            callback(null, { status: 200 }, "{ \"user\": \"Francesco\" }");
+            callback(null, { statusCode: 200 }, "{ \"user\": \"Francesco\" }");
         });
         const next = jest.fn();
 

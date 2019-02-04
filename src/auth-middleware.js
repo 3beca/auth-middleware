@@ -22,7 +22,7 @@ function authMiddleware(uri = "https://auth.tribeca.ovh/token/verify") {
             },
             body: JSON.stringify({ token })
         }, function onResponse(err, response, body) {
-            if (!response || response.status !== 200) {
+            if (!response || response.statusCode !== 200) {
                 res.status(401).end();
                 return;
             }
