@@ -10,4 +10,4 @@ app.get("/", authMiddleware(), function handleRequest(req, res) {
 const port = process.NODE_ENV || 3000;
 app.listen(port, function() {
     console.log(`Server listening at port ${port}`);
-})
+});
