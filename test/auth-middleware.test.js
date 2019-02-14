@@ -96,4 +96,18 @@ describe("authMiddleware", () => {
         expect(next).toBeCalled();
         expect(req.user).toEqual({ user: "Francesco" });
     });
+
+    it("should call next if unless is specified and matches original url", () => {
+        const auth = authMiddleware().unless({ path: ["/public/favicon.ico"] });
+        const req = {
+            originalUrl: "/public/favicon.ico"
+        };
+        const res = {};
+        const next = jest.fn();
+
+        auth(req, res, next);
+
+        expect(next).toBeCalled();
+        expect(req.user).toBeUndefined();
+    });
 });
