@@ -21,7 +21,7 @@ jobs:
       - run: npm test
       - run: npm run publish-code-coverage
         env:
-          CODECOV_TOKEN: ${{secrets.codecov_token}}
+          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
 
   publish-npm:
     needs: build
@@ -36,7 +36,7 @@ jobs:
       - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
     needs: build

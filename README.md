@@ -1,6 +1,6 @@
 # auth-middleware
 
-[![Codeship Status for 3beca/auth-middleware](https://app.codeship.com/projects/5189faa0-0a39-0137-f8a4-0aa1d68286f3/status?branch=master)](https://app.codeship.com/projects/326179)
+[![Actions Status](https://github.com/3beca/auth-middleware/workflows/Node%20CI/badge.svg)](https://github.com/3beca/auth-middleware/actions)
 [![CodeFactor](https://www.codefactor.io/repository/github/3beca/auth-middleware/badge)](https://www.codefactor.io/repository/github/3beca/auth-middleware)
 [![codecov](https://codecov.io/gh/3beca/auth-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/3beca/auth-middleware)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=3beca/auth-middleware)](https://dependabot.com)

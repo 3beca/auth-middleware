@@ -23,5 +23,5 @@ jobs:
     - run: npm test
     - run: npm run publish-code-coverage
       env:
-        CODECOV_TOKEN: ${{secrets.codecov_token}}
+        CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
         CI: true
