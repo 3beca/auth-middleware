@@ -1,6 +1,6 @@
 {
   "name": "@tribeca/auth-middleware",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Express auth middleware for tribeca auth service",
   "main": "build/index.js",
   "scripts": {
